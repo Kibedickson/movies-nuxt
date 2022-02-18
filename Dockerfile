@@ -23,7 +23,7 @@ FROM node:16-alpine
 
 WORKDIR /var/www/movies-nuxt
 
-COPY --from=builder /var/www/movies-nuxt  .
+COPY --from=build /var/www/movies-nuxt  .
 
 EXPOSE 3000
 
