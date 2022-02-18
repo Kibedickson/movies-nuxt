@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  nuxt:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: movies_nuxt_nuxt
+    restart: always
+    expose:
+      - 3000
+    command: 'yarn start'
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx.Dockerfile
+    container_name: movies_nuxt_nginx
+    expose:
+      - 80
+      - 443
+    depends_on:
+      - nuxt
