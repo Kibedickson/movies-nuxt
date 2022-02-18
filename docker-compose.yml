@@ -21,3 +21,8 @@ services:
       - 443
     depends_on:
       - nuxt
+
+networks:
+  default:
+    external:
+      name: reverse-proxy
