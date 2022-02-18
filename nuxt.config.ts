@@ -17,8 +17,4 @@ export default defineNuxtConfig({
         TMDB_API_URL: process.env.TMDB_API_URL,
         TMDB_TOKEN: process.env.TMDB_TOKEN,
     },
-    nitro: {
-        preset: 'server',
-        timing: true
-    }
 })
