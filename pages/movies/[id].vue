@@ -41,7 +41,7 @@
             </div>
 
             <div>
-              <div v-if="movie.videos.results.length > 0" class="mt-12">
+              <div v-if="movie.videos" class="mt-12">
                 <button
                     @click="isVideoModalOpen = true"
                     class="flex inline-flex items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-4 hover:bg-orange-600 transition ease-in-out duration-150"
@@ -72,7 +72,7 @@
                       <div class="modal-body px-8 py-8">
                         <div class="responsive-container overflow-hidden relative" style="padding-top: 56.25%">
                           <iframe class="responsive-iframe absolute top-0 left-0 w-full h-full"
-                                  :src="`https://www.youtube.com/embed/${movie.videos.results[0].key}`"
+                                  :src="`https://www.youtube.com/embed/${movie.videos}`"
                                   style="border:0;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                       </div>

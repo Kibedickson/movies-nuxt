@@ -76,7 +76,7 @@ function formatMovie(movie) {
             day: 'numeric'
         }),
         credits: movie.credits,
-        videos: movie.videos,
+        videos: movie.videos.results.filter(v => v.type === 'Trailer')[0].key,
         images: movie.images.backdrops.slice(0, 9),
         crew: movie.credits.crew.slice(0, 2),
         cast: movie.credits.cast.slice(0, 5).map(cast => {
