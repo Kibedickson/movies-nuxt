@@ -4,7 +4,8 @@
       <div class="popular-movies">
         <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Popular Movies</h2>
 
-        <div v-if="!loading && popularMovies" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div v-if="!loading && popularMovies"
+             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           <template v-for="(movie, index) in popularMovies" :key="index">
             <MoviesCard :movie="movie"></MoviesCard>
           </template>

@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf79b70-835a-4b95-8e1e-a7128f5633f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/TvsCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composables/useTvs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/tvs/[id].vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/tvs/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/tv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/tvs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MoviesCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/MoviesCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Nav.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composables/useMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/composables/useMovies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/movies/[id].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/movies/[id].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
         <option value="HTTP Request" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,13 +58,21 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/api" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages/tvs" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="actions.on.save" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Personal\Projects\movies-nuxt\pages\tvs" />
+      <recent name="E:\Personal\Projects\movies-nuxt\components" />
+      <recent name="E:\Personal\Projects\movies-nuxt\composables" />
+      <recent name="E:\Personal\Projects\movies-nuxt\server\api" />
       <recent name="$PROJECT_DIR$/server/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -64,6 +81,19 @@
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fdf79b70-835a-4b95-8e1e-a7128f5633f5" name="Changes" comment="" />
+      <created>1645383947020</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645383947020</updated>
+      <workItem from="1645383950084" duration="155000" />
+      <workItem from="1645425489309" duration="3866000" />
+      <workItem from="1645454948112" duration="3356000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
@@ -77,5 +107,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

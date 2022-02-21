@@ -15,7 +15,7 @@
           <NuxtLink to="/" class="hover:text-gray-300">Movies</NuxtLink>
         </li>
         <li class="md:ml-6 mt-3 md:mt-0">
-          <NuxtLink to="/tv" class="hover:text-gray-300">TV Shows</NuxtLink>
+          <NuxtLink to="/tvs" class="hover:text-gray-300">TV Shows</NuxtLink>
         </li>
         <li class="md:ml-6 mt-3 md:mt-0">
           <NuxtLink to="/actors" class="hover:text-gray-300">Actors</NuxtLink>

@@ -33,7 +33,7 @@ export default function () {
             throw new Error(error.value)
         }
 
-        movie.value = await formatMovie(data.value)
+        movie.value = formatMovie(data.value)
     }
 
     return {
@@ -41,7 +41,7 @@ export default function () {
     }
 }
 
-function formatMovies(movies, genres) {
+async function formatMovies(movies, genres) {
     return movies.slice(0, 10).map(movie => {
         let formattedGenres = movie.genre_ids.map(genre => {
             return genres.find(g => g.id === genre).name
@@ -53,9 +53,7 @@ function formatMovies(movies, genres) {
             poster_path: 'https://image.tmdb.org/t/p/w500/' + movie.poster_path,
             overview: movie.overview,
             release_date: new Date(movie.release_date).toLocaleDateString("en-US", {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
+                year: 'numeric', month: 'long', day: 'numeric'
             }),
             vote_average: movie.vote_average * 10 + '%'
         }
@@ -64,25 +62,23 @@ function formatMovies(movies, genres) {
 
 function formatMovie(movie) {
     return {
-        id: movie.id,
-        poster_path: movie.poster_path ? 'https://image.tmdb.org/t/p/w500/' + movie.poster_path : 'https://via.placeholder.com/500x750',
-        genres: movie.genres.map(genre => genre.name).join(', '),
-        title: movie.title,
-        vote_average: movie.vote_average * 10 + '%',
-        overview: movie.overview,
-        release_date: new Date(movie.release_date).toLocaleDateString("en-US", {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
+        "id": movie.id,
+        "poster_path": movie.poster_path ? 'https://image.tmdb.org/t/p/w500/' + movie.poster_path : 'https://via.placeholder.com/500x750',
+        "genres": movie.genres.map(genre => genre.name).join(', '),
+        "title": movie.title,
+        "vote_average": movie.vote_average * 10 + '%',
+        "overview": movie.overview,
+        "release_date": new Date(movie.release_date).toLocaleDateString("en-US", {
+            "year": 'numeric', "month": 'long', "day": 'numeric'
         }),
-        credits: movie.credits,
-        videos: movie.videos.results.filter(v => v.type === 'Trailer')[0].key,
-        images: movie.images.backdrops.slice(0, 9),
-        crew: movie.credits.crew.slice(0, 2),
-        cast: movie.credits.cast.slice(0, 5).map(cast => {
+        "credits": movie.credits,
+        "videos": movie.videos.results.filter(v => v.type === 'Trailer')[0].key,
+        "images": movie.images.backdrops.slice(0, 9),
+        "crew": movie.credits.crew.slice(0, 2),
+        "cast": movie.credits.cast.slice(0, 5).map(cast => {
             return {
                 ...cast,
-                profile_path: cast.profile_path ? 'https://image.tmdb.org/t/p/w300/' + cast.profile_path : 'https://via.placeholder.com/300x450'
+                "profile_path": cast.profile_path ? 'https://image.tmdb.org/t/p/w300/' + cast.profile_path : 'https://via.placeholder.com/300x450'
             }
         })
     }
